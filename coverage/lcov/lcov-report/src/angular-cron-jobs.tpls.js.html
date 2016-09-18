@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\angular-cron-jobs.tpls.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> angular-cron-jobs.tpls.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/3</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">angular.module('templates-angularcronjobs', ['cronselection.html']);
+&nbsp;
+angular.module("cronselection.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("cronselection.html",
+    "&lt;div class=\"cron-wrap\"&gt;\n" +
+    "    &lt;span&gt;Every: &lt;/span&gt;\n" +
+    "    &lt;div class=\"cron-select-wrap\"&gt;\n" +
+    "        &lt;select class=\"cron-select\" ng-model=\"myFrequency.base\" ng-options=\"item.value as item.label for item in frequency\"&gt;&lt;/select&gt;\n" +
+    "    &lt;/div&gt;\n" +
+    "    &lt;div class=\"select-options\"&gt;\n" +
+    "        &lt;span ng-show=\"myFrequency.base == baseFrequency.week\"&gt;on &lt;/span&gt;\n" +
+    "\n" +
+    "        &lt;div ng-show=\"myFrequency.base == baseFrequency.week\" class=\"cron-select-wrap\"&gt;\n" +
+    "            &lt;select class=\"cron-select day-value\" ng-model=\"myFrequency.dayValues\" ng-multiple=\"allowMultiple\" convert-to-number&gt;\n" +
+    "                &lt;option ng-repeat=\"value in dayValues\" ng-selected=\"myFrequency.dayValues.indexOf(value) &gt;= 0\" value=\"{{value}}\"&gt;\n" +
+    "                    {{value | cronDayName}}\n" +
+    "                &lt;/option&gt;\n" +
+    "            &lt;/select&gt;\n" +
+    "        &lt;/div&gt;\n" +
+    "        \n" +
+    "        &lt;span ng-show=\"myFrequency.base &gt;= baseFrequency.month\"&gt;on the &lt;/span&gt;\n" +
+    "\n" +
+    "        &lt;div ng-show=\"myFrequency.base &gt;= baseFrequency.month\" class=\"cron-select-wrap\"&gt;\n" +
+    "            &lt;select class=\"cron-select day-of-month-value\" ng-model=\"myFrequency.dayOfMonthValues\" ng-multiple=\"allowMultiple\" convert-to-number&gt;\n" +
+    "                &lt;option ng-repeat=\"value in dayOfMonthValues\" ng-selected=\"myFrequency.dayOfMonthValues.indexOf(value) &gt;= 0\" value=\"{{value}}\"&gt;\n" +
+    "                    {{value | cronNumeral}}\n" +
+    "                &lt;/option&gt;\n" +
+    "            &lt;/select&gt;\n" +
+    "        &lt;/div&gt;\n" +
+    "\n" +
+    "        &lt;span ng-show=\"myFrequency.base == baseFrequency.year\"&gt;of &lt;/span&gt;\n" +
+    "\n" +
+    "        &lt;div ng-show=\"myFrequency.base == baseFrequency.year\" class=\"cron-select-wrap\"&gt;\n" +
+    "            &lt;select class=\"cron-select month-value\" ng-model=\"myFrequency.monthValues\" ng-multiple=\"allowMultiple\" convert-to-number&gt;\n" +
+    "                &lt;option ng-repeat=\"value in monthValues\" ng-selected=\"myFrequency.monthValues.indexOf(value) &gt;= 0\" value=\"{{value}}\"&gt;\n" +
+    "                    {{value | cronMonthName}}\n" +
+    "                &lt;/option&gt;\n" +
+    "            &lt;/select&gt;\n" +
+    "        &lt;/div&gt;\n" +
+    "\n" +
+    "        &lt;span ng-show=\"myFrequency.base &gt;= baseFrequency.hour\"&gt;at &lt;/span&gt;\n" +
+    "\n" +
+    "        &lt;div ng-show=\"myFrequency.base &gt;= baseFrequency.day\" class=\"cron-select-wrap\"&gt;\n" +
+    "            &lt;select class=\"cron-select hour-value\" ng-model=\"myFrequency.hourValues\" ng-multiple=\"allowMultiple\" convert-to-number&gt;\n" +
+    "                &lt;option ng-repeat=\"value in hourValues\" ng-selected=\"myFrequency.hourValues.indexOf(value) &gt;= 0\" value=\"{{value}}\"&gt;\n" +
+    "                    {{value}}\n" +
+    "                &lt;/option&gt;\n" +
+    "            &lt;/select&gt;\n" +
+    "        &lt;/div&gt;\n" +
+    "\n" +
+    "        &lt;span ng-show=\"myFrequency.base &gt;= baseFrequency.day\"&gt; : &lt;/span&gt;\n" +
+    "\n" +
+    "        &lt;div ng-show=\"myFrequency.base &gt;= baseFrequency.hour\" class=\"cron-select-wrap\"&gt;\n" +
+    "            &lt;select class=\"cron-select minute-value\" ng-model=\"myFrequency.minuteValues\"  ng-multiple=\"allowMultiple\" convert-to-number&gt;\n" +
+    "                &lt;option ng-repeat=\"value in minuteValues\" ng-selected=\"myFrequency.minuteValues.indexOf(value) &gt;= 0\" value=\"{{value}}\"&gt;\n" +
+    "                    {{value}}\n" +
+    "                &lt;/option&gt;\n" +
+    "            &lt;/select&gt;\n" +
+    "        &lt;/div&gt;\n" +
+    "        &lt;span ng-show=\"myFrequency.base == 2\"&gt; past the hour&lt;/span&gt;\n" +
+    "    &lt;/div&gt;\n" +
+    "&lt;/div&gt;");
+}]);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Sep 18 2016 11:02:16 GMT+0200 (W. Europe Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
